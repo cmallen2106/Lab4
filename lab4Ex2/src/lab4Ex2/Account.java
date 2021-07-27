@@ -4,7 +4,11 @@
 
 package lab4Ex2;
 
+//Create a new class called Account
 public class Account {
+	
+	//A static variable called numAccounts, initialized to 0.
+	static int numAccounts = 0; 
 
 	public static void main(String[] args) {
 
