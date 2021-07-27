@@ -14,8 +14,20 @@ public class Account {
 	public Account() {
 		numAccounts++; 
 	}
+	
+	//A static method called getNumAccounts(). It should return numAccounts
+	public static int getNumAccounts() {
+		return numAccounts; 
+	}
 
+	//Test the functionality in the main method of Account by creating a few Account objects, then print out the number of accounts.
 	public static void main(String[] args) {
+		
+		new Account(); 
+		new Account(); 
+		new Account(); 
+		
+		System.out.println("Number of Accounts: " + Account.getNumAccounts()); 
 
 	}
 
