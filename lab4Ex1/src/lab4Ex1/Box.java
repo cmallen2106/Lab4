@@ -7,6 +7,7 @@ package lab4Ex1;
 public class Box {
 	
 	int size = 0; 
+	public static char c = 'c'; 
 
 	public static void main(String[] args) {
 		Box box = new Box(); 
@@ -26,6 +27,14 @@ public class Box {
 		for (int num = 1; num <= size; num++) {
 			for (int index = 1; index <= size; index++)
 				System.out.println("*"); 
+			System.out.println(); 
+		}
+	}
+	
+	public void printBox (char c) {
+		for (int num = 1; num <= size; num++) {
+			for (int index = 1; index <= size; index++)
+				System.out.println(c); 
 			System.out.println(); 
 		}
 	}
