@@ -16,8 +16,14 @@ public class Numbers {
 		int arraySize = Integer.parseInt(scan.nextLine()); 
 		int[] group = new int[arraySize]; 
 		
-		//Asking for array elements 
-		System.out.println("Enter array numbers: "); 
+		//Asking user and loading array elements 
+		for (int index = 0; index < group.length; index++) {
+		System.out.println("Enter array numbers: " + (index+1) + ": "); 
+		group[index] = scan.nextInt(); 
+		}
+		
+		//close scanner
+				scan.close();
 		
 
 	}
